@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,7 +14,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/TheAngryDarling/SwiftBasicCodableHelpers.git", from: "1.0.0"),
+        .package(url: "https://github.com/TheAngryDarling/SwiftBasicCodableHelpers.git", from: "1.0.3"),
+        //.package(path: "../SwiftBasicCodableHelpers"),
         .package(url: "https://github.com/TheAngryDarling/SwiftClassCollections.git", from: "1.0.4"),
         .package(url: "https://github.com/TheAngryDarling/SwiftNillable.git", from: "1.0.0")
     ],

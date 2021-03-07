@@ -14,7 +14,7 @@ public typealias PropertyListDecoder = PListDecoder
 #endif
 
 
-open class PListEncoder: BasicOpenEncoder<Data> {
+open class PListEncoder: BasicOpenEncoder<Data>, SupportedDictionaryRootEncoderType, SupportedArrayRootEncoderType  {
     public var outputFormat: PropertyListSerialization.PropertyListFormat = .xml
     
     public init() {
@@ -31,7 +31,7 @@ open class PListEncoder: BasicOpenEncoder<Data> {
 extension PListEncoder: StandardEncoderType, DataEncoderType { }
 #endif
 
-open class PListDecoder: BasicOpenDecoder<Data> {
+open class PListDecoder: BasicOpenDecoder<Data>, SupportedDictionaryRootDecoderType, SupportedArrayRootDecoderType {
     private static let READ_FORMAT_FLAG: String = "__PLIST_DECODER_READ_FORMAT__"
     private static let FORMAT: String = "__PLIST_DECODER_FORMAT__"
     

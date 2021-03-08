@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/TheAngryDarling/SwiftBasicCodableHelpers.git", from: "1.0.0"),
+        .package(url: "https://github.com/TheAngryDarling/SwiftBasicCodableHelpers.git", from: "1.1.0"),
         .package(url: "https://github.com/TheAngryDarling/SwiftClassCollections.git", from: "1.0.4"),
         .package(url: "https://github.com/TheAngryDarling/SwiftNillable.git", from: "1.0.0")
     ],
